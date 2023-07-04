@@ -25,7 +25,7 @@ const Navbar = () => {
       </NavLink>
       {/* </a> */}
       {/* <a href="about.html"> */}
-      <NavLink to="about">
+      <NavLink to="/about">
         <div
           className="menu-style aling-content-center"
           data-original-title="About"
