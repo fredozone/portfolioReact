@@ -1,0 +1,74 @@
+/*************************************************
+                        MENU
+*************************************************/
+
+/* center my menu on the right center of my screen */
+.display-manu {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.active-menu,
+.menu-style {
+  border-style: solid;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-width: 1px;
+  padding: 15px;
+  margin: 5px;
+  font-size: 12pt;
+  background-color: var(--Snow);
+}
+
+/* working with active menu */
+.active > div {
+  background-color: var(--dark-color);
+}
+
+.active > div:after {
+  content: attr(data-original-title);
+  color: var(--Snow);
+}
+
+.active > svg {
+  display: none;
+}
+
+/* menu hover styles */
+.menu-style:hover {
+  background-color: var(--dark-color);
+  color: var(--Pale-Turquoise);
+  transition: ease-in-out;
+  transition-delay: 0.2s;
+  width: 40px;
+  height: 40px;
+}
+
+svg {
+  color: var(--svg-color-menu);
+  font-size: 1.5rem;
+}
+
+/* desplay none my svg  */
+a > .menu-style:hover > svg {
+  display: none;
+  transition: ease-in-out;
+  transition-delay: 0.2s;
+}
+
+/* showing the attribute that the tag a have with the name data-original-tilte */
+.menu-style:hover:after {
+  transition: ease-in-out;
+  transition-delay: 0.2s;
+  content: attr(data-original-title);
+  color: var(--Snow);
+}

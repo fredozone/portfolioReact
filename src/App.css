@@ -1,0 +1,20 @@
+:root {
+  --dark-color: black;
+  --svg-color-menu: black;
+  --Pale-Turquoise: #91c8ff;
+  --Snow: #fafafa;
+  --background-color-pages: #f2f6ff;
+  --skill-color-name: #5c6170;
+  --gray-shadow: #ccc;
+  --cyan-blue: #86b7fe;
+  --Cerulean: #2268ee;
+  --blue-green: #19a7ce;
+  --index-background: #eff5ff;
+  --footer-background: #395ecc;
+
+  /* index style blob */
+  --Lapis-blue: #1d328b;
+  --cornflower-blue: #5e9bfc;
+  --tropical-blue: #bed7ff;
+  --Palatinate-blue: #1b41da;
+}
