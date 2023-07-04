@@ -1,5 +1,7 @@
 import React from "react";
 import "./style.css"; // Import the required CSS file
+import meRed from "./../../public/images/me-red.jpg";
+import me from "./../../public/images/me.jpg";
 const infoText = [
   {
     id: 1,
@@ -55,7 +57,7 @@ const about = () => {
           </div>
           <div className="aling-div-left aling-content-center img-left-margin">
             <img
-              src="./../../me-red.jpg"
+              src={meRed}
               alt="myself"
               width="300px"
               className="img-style-page"
@@ -70,7 +72,7 @@ const about = () => {
             id="fisrt-child-img"
           >
             <img
-              src="./../../public/me.jpg"
+              src={me}
               alt="myself"
               width="300px"
               className="img-style-page"
