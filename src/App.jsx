@@ -16,13 +16,13 @@ import Page404 from "./components/page404";
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename="/portfolioReact">
         <Navbar />
         <Routes>
-          <Route path="/portfolioReact/home" element={<Home />} />
-          <Route path="/portfolioReact/about" element={<About />} />
-          <Route path="/portfolioReact/portfolio" element={<Portfolio />} />
-          <Route path="/portfolioReact/contact" element={<Contact />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Navigate to="/home" />}></Route>
         </Routes>
       </Router>
