@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <section className="menu" id="phone-view">
       {/* <a href="index.html"> */}
-      <NavLink to="/">
+      <NavLink to="/portfolioReact/home">
         <div
           className="menu-style aling-content-center"
           data-original-title="Home"
@@ -25,7 +25,7 @@ const Navbar = () => {
       </NavLink>
       {/* </a> */}
       {/* <a href="about.html"> */}
-      <NavLink to="/about">
+      <NavLink to="/portfolioReact/about">
         <div
           className="menu-style aling-content-center"
           data-original-title="About"
@@ -49,7 +49,7 @@ const Navbar = () => {
       </NavLink>
       {/* </a> */}
       {/* <a href="portfolio.html"> */}
-      <NavLink to="/portfolio">
+      <NavLink to="/portfolioReact/portfolio">
         <div
           className="menu-style aling-content-center"
           data-original-title="Work"
@@ -69,7 +69,7 @@ const Navbar = () => {
         {/* </a> */}
       </NavLink>
       {/* <a href="contact.html"> */}
-      <NavLink to="/contact">
+      <NavLink to="/portfolioReact/contact">
         <div
           className="menu-style aling-content-center"
           data-original-title="Contact"
