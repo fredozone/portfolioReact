@@ -57,7 +57,7 @@ const about = () => {
           </div>
           <div className="aling-div-left aling-content-center img-left-margin">
             <img
-              src={meRed}
+              src={"." + meRed}
               alt="myself"
               width="300px"
               className="img-style-page"
@@ -72,7 +72,7 @@ const about = () => {
             id="fisrt-child-img"
           >
             <img
-              src={me}
+              src={"." + me}
               alt="myself"
               width="300px"
               className="img-style-page"
