@@ -24,6 +24,7 @@ const App = () => {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/*" element={<Navigate to="/home" />}></Route>
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </Router>
     </div>
