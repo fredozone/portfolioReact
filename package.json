@@ -2,7 +2,7 @@
   "name": "react-digital-portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://fredozone.github.io/portfolioReact/",
+  "homepage": "https://fredozone.github.io/portfolioReact",
   "type": "module",
   "scripts": {
     "dev": "vite",

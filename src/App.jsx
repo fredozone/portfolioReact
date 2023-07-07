@@ -2,7 +2,12 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import "./menu.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./components/home";
 import About from "./components/about";
 import Contact from "./components/contact";
@@ -14,11 +19,11 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/*" element={<Page404 />}></Route>
+          <Route path="/portfolioReact/home" element={<Home />} />
+          <Route path="/portfolioReact/about" element={<About />} />
+          <Route path="/portfolioReact/portfolio" element={<Portfolio />} />
+          <Route path="/portfolioReact/contact" element={<Contact />} />
+          <Route path="/*" element={<Navigate to="/home" />}></Route>
         </Routes>
       </Router>
     </div>
