@@ -23,6 +23,7 @@ const App = () => {
       "/portfolioReact/about",
       "/portfolioReact/portfolio",
       "/portfolioReact/contact",
+      "/",
     ];
     const currentPath = window.location.pathname;
     const isValidRoute = validRoutes.includes(currentPath);
@@ -34,7 +35,7 @@ const App = () => {
     <div>
       {notFound ? (
         <div>
-          <Route path="*" element={<Page404 />} />
+          <Route path="/" element={<Page404 />} />
         </div>
       ) : (
         <Router basename="/portfolioReact">
