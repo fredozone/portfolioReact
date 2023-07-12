@@ -18,18 +18,17 @@ const App = () => {
 
   React.useEffect(() => {
     // Check if the current path matches any valid routes
-    const validRoutes = [
-      "/portfolioReact/home",
-      "/portfolioReact/about",
-      "/portfolioReact/portfolio",
-      "/portfolioReact/contact",
-      "/",
-    ];
-    const currentPath = window.location.pathname;
-    const isValidRoute = validRoutes.includes(currentPath);
-
-    // Set the notFound state based on whether the current path is a valid route
-    setNotFound(!isValidRoute);
+    // const validRoutes = [
+    //   "/portfolioReact/home",
+    //   "/portfolioReact/about",
+    //   "/portfolioReact/portfolio",
+    //   "/portfolioReact/contact",
+    //   "/",
+    // ];
+    // const currentPath = window.location.pathname;
+    // const isValidRoute = validRoutes.includes(currentPath);
+    // // Set the notFound state based on whether the current path is a valid route
+    // setNotFound(!isValidRoute);
   }, []);
   return (
     <div>
@@ -38,7 +37,8 @@ const App = () => {
           <Route path="/" element={<Page404 />} />
         </div>
       ) : (
-        <Router basename="/portfolioReact">
+        <Router>
+          {/* // <Router basename="/portfolioReact"> */}
           <Navbar />
           <Routes>
             <Route path="/home" element={<Home />} />
